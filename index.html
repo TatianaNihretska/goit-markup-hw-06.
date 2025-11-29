@@ -25,14 +25,14 @@
             >Web<span class="web-logo-part">Studio</span></a
           >
           <ul class="web-navi-section">
-            <li><a href="./index.html" class="web-navi current">Studio</a></li>
-            <li><a href="" class="web-navi">Portfolio</a></li>
-            <li><a href="" class="web-navi">Contacts</a></li>
+            <li class="nav-item"><a href="./index.html" class="web-navi current">Studio</a></li>
+            <li class="nav-item"><a href="" class="web-navi">Portfolio</a></li>
+            <li class="nav-item"><a href="" class="web-navi">Contacts</a></li>
           </ul>
         </nav>
         <address class="web-adress-section">
           <ul class="contacts-list">
-            <li>
+            <li class="contacts-item">
               <a href="mailto:info@devstudio.com" class="web-address"
                 >info@devstudio.com</a
               >
@@ -44,6 +44,20 @@
             </li>
           </ul>
         </address>
+        <button class="burger-btn" type="button" data-menu-open>
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+        </div>
+        
+        <div class="mobile-menu" data-menu>
+          <div class="container mobile-menu-container">
+            <button class="mobile-menu-close" data-menu-close>Close</button>
+            <nav class="mobile-menu-nav">Navigation</nav>
+            <address>Address</address>
+            <div>Soc link</div>
+          </div>
       </div>
     </header>
     <main>
@@ -530,5 +544,6 @@
     </div>
     
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
