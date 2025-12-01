@@ -321,6 +321,7 @@ button {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #434455;
+    font-style: normal;
 }
 
 .nav-mobile-link:hover,
@@ -386,7 +387,7 @@ button {
 }
 
 @media (min-resolution: 192dpi) {
-    .hero {
+    .main-page {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             url(../images/hero/people-office@2x-mobile.jpg);
     }
@@ -537,7 +538,7 @@ button {
         }
 
     .skills-list {
-        gap: 24px;
+        gap: 72px 24px;
     }
 
     .skills-list-sub {
@@ -711,7 +712,7 @@ display: flex;
 .portfolio-list-sub{
     position: relative;
     overflow: hidden;
-    border: solid 1px #e7e9fc;
+box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     border-radius: 0 0 4px 4px;
     max-width: 356px;
     cursor: pointer;
@@ -826,7 +827,7 @@ display: flex;
     letter-spacing: 0.02em;
     color: #f4f4fd;
     max-width: 288px;
-    margin-top: 16px;
+    
     text-align: left;
 }
 
@@ -883,21 +884,17 @@ display: flex;
 }
 
 .footer-icons {
-    
-    height: 24px;
-    fill: #f4f4fd;
-    
+    fill: #f4f4fd;   
 }
 
  .container-subscribe{
-    
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
 
 .footer-input{
-    width: 264px;
+    width: 288px;
     height: 40px;
     border: 1px solid #ffffff;
     background-color: transparent;
@@ -908,7 +905,7 @@ display: flex;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     color: #fff;
     border-radius: 4px;
-    margin-bottom: 16px;
+    
 }
 
 .button-fly-sub{
@@ -1000,8 +997,8 @@ display: flex;
     .container.footer-cont{
         flex-wrap: nowrap;
         align-items: baseline;
-        max-width: 1128px;
-        padding: 15px;
+        max-width: 1158px;
+        padding: 0 15px;
         gap: 0;
     }
 
@@ -1245,9 +1242,12 @@ display: flex;
     letter-spacing: 0.04em;
 }
 .policy-label{
-    display: flex;
-        align-items: center;
-        flex-shrink: 0;
+display: flex;
+align-items: center;
+    
+}
+.custom-checkbox{
+flex-shrink: 0;
 }
 
 .button-send {
